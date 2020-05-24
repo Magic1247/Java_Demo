@@ -13,8 +13,9 @@ public class TestString05 {
             System.out.println(c[i]);
         }
         String d = "HelloWorld!";
-        a.replace(a,d);                         // 将旧字符串替换为新字符串并返回新字符串
+        a.replace(a,d);                         // 将旧字符串替换为新字符串并返回新字符串(全替换)
         System.out.println(d);
-
+        String e = "aaaa";
+        System.out.println(e.replace("a","*"));
     }
 }
