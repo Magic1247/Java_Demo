@@ -1,8 +1,8 @@
-package cn.zyh.DomePerson;
+package cn.zyh.DemoPerson;
 
-public class DomeTestShow {
+public class DemoTestShow {
     public static void main(String[] args) {
-        DomePer a = new DomePer();
+        DemoPer a = new DemoPer();
         a.setAge(-10);
         a.name= "蔡徐坤";
         a.show();

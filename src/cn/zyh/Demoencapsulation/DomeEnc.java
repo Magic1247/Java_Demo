@@ -1,4 +1,4 @@
-package cn.zyh.Domeencapsulation;
+package cn.zyh.Demoencapsulation;
 
 public class DomeEnc {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package cn.zyh.DomePerson;
+package cn.zyh.DemoPerson;
 /*
 set方法用于接收外部输入
 get方法用于赋值私有变量
  */
-public class DomePer {
+public class DemoPer {
     String  name;
     private int age;    //私有变量age
     public void show(){
