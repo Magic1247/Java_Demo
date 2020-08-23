@@ -1,5 +1,5 @@
 package cn.zyh.DemoExtends;
-import cn.zyh.StudyDome.HelloWorld;
+import cn.zyh.StudyDemo.HelloWorld;
 
 public class Zi extends Fu{
     int num = 20;
