@@ -12,7 +12,7 @@ public class StringNum {
         char[] cA = str.toCharArray();
         HashMap<Character,Integer> map = new HashMap<>();
         for (int i = 0; i < cA.length; i++) {
-            if (map.containsKey(cA[i])){
+            if (map.containsKey(cA[i])){   // A:判断key是否存在 planB:get方法获取值如果返回null，则证明该字符未添加到map集合中
                 Integer count = map.get(cA[i]);
                 map.put(cA[i],++count);
             }else{
