@@ -14,7 +14,7 @@ public class DemoInputStrem {
     }
 
     private static void demoRead3() throws IOException {
-        InputStream fis = new FileInputStream("F:\\basic_code\\Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
+        InputStream fis = new FileInputStream("Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
         byte[] bytes = new byte[1024];
         int len = 0;
         while ((len = fis.read(bytes)) != -1 ){
@@ -23,7 +23,7 @@ public class DemoInputStrem {
     }
 
     private static void demoRead2() throws IOException {
-        InputStream fis = new FileInputStream("F:\\basic_code\\Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
+        InputStream fis = new FileInputStream("Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
         byte[] bytes = new byte[1000];
         fis.read(bytes);
         System.out.println(Arrays.toString(bytes));
@@ -32,7 +32,7 @@ public class DemoInputStrem {
     }
 
     private static void demoRead() throws IOException {
-        InputStream fis = new FileInputStream("F:\\basic_code\\Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
+        InputStream fis = new FileInputStream("Start\\src\\com\\huaiguang\\IOStudy\\a.txt");
         int len = 0;
         while ((len = fis.read() )!= -1){        // read()方法读取完后指针向后移动，必须提前接收
             System.out.println((char)(len));

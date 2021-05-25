@@ -10,7 +10,7 @@ public class DemoOutputStrem {
     }
 
     private static void write01() throws IOException {
-        OutputStream os = new FileOutputStream("F:\\basic_code\\Start\\src\\com\\huaiguang\\IOStudy\\a.txt",false);
+        OutputStream os = new FileOutputStream("Start\\src\\com\\huaiguang\\IOStudy\\a.txt",false);
 //        os.write(84903859);
         byte[] bytes = {65,66,67,68,69};   // 第一个字节为正数查询ACS表，第一个字节为负数，和第二个字节组成一个中文显示
         os.write(bytes);
