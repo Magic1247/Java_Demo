@@ -8,6 +8,7 @@ public class iPhone {
         iPhone.prise = 10000;
         System.out.println(iPhone.brand);
         System.out.println(iPhone.color);
+        //
         System.out.println(iPhone.prise);
         iPhone.call(110);         //调用call方法参数a：110
         System.out.println("==================");
