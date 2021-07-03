@@ -2,9 +2,8 @@ package com.huaiguang.FunctionInterfaceStudy;
 
 public class DemoLambda {
     public static void main(String[] args) {
-        StartThread(()->{
-            System.out.println(Thread.currentThread().getName()+"Lambda线程开启");
-        });
+        StartThread(()->
+            System.out.println(Thread.currentThread().getName()+"Lambda线程开启"));
         StartThread(new Runnable() {
             @Override
             public void run() {
