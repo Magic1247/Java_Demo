@@ -5,7 +5,6 @@ import java.util.Comparator;
 
 public class DemoMethod {
     public static void main(String[] args) {
-        demo();
         String[] arr = {"aaa","bb","cccc"};
         Arrays.sort(arr,demo());
 //        System.out.println(arr);
