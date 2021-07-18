@@ -16,8 +16,11 @@ public class DemoGetMax {
 //            return max;
 //        }));
         con("蔡徐坤",(name) -> {
-            System.out.println("消费"+name);
+//            System.out.println("消费"+name);
+            String rename = new StringBuffer(name).reverse().toString();
+            System.out.println(rename);
         });
+
     }
     private static void con(String name, Consumer<String> con){
         con.accept(name);
