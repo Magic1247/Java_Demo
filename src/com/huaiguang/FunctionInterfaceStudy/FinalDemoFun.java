@@ -10,6 +10,7 @@ public class FinalDemoFun {
                 s -> Integer.parseInt(s),
                 s -> s+=100
                 );
+
     }
     public static void change(String str, Function<String,String> fun1, Function<String,Integer> fun2, Function<Integer,Integer> fun3){
         System.out.println(fun1.andThen(fun2).andThen(fun3).apply(str));
