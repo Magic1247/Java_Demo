@@ -8,21 +8,18 @@ import java.net.Socket;
 
 public class FileUploadSever {
     public static void main(String[] args) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(9999);
-        Socket accept = serverSocket.accept();
-        InputStream sis = accept.getInputStream();
+        ServerSocket sever = new ServerSocket(8888);
+        Socket accept = sever.accept();
+        FileOutputStream fos = new FileOutputStream("D:\\test\\uploadfile\\testuploadfile01.txt");
+        InputStream is = accept.getInputStream();
         byte[] bytes = new byte[1024];
         int len = 0;
-        // 创建本地文件输出流，用于将读取到的文件字节流，写入本地磁盘
-        FileOutputStream fos = new FileOutputStream("F:\\basic_code\\Start\\src\\com\\huaiguang\\NetStudy\\testupload.png");
-        while ((len=sis.read(bytes))!=-1){
+        while ((len = is.read(bytes))!=-1){
             fos.write(bytes,0,len);
-            System.out.println("上传中");
         }
-        System.out.println("上传完毕，通知客户端");
-//        accept.getOutputStream().write("上传成功".getBytes());
-        accept.close();
+        accept.getOutputStream().write("上传成功".getBytes());
+        sever.close();
         fos.close();
-        serverSocket.close();
+        is.close();
     }
 }
