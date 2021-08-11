@@ -15,7 +15,7 @@ public class ReflectGetFilds {
         Person p = new Person();
         Object o = a.get(p);   // 获取对象对应的成员变狼
         System.out.println(o);
-        a.set(p,"test");       // 设置对应对象成员变量
+        a.set(p, "test");       // 设置对应对象成员变量
         System.out.println(p);
         System.out.println("===========================");
         Field[] declaredFields = personClass.getDeclaredFields();  // 忽略权限访问所有成员变量
@@ -24,7 +24,7 @@ public class ReflectGetFilds {
         }
         Field name = personClass.getDeclaredField("name");
         name.setAccessible(true); // 暴力反射，忽略权限设置成员变量
-        name.set(p,"蔡徐坤");
+        name.set(p, "蔡徐坤");
         System.out.println(name.get(p));
 
     }

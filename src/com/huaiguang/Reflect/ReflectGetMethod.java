@@ -12,8 +12,8 @@ public class ReflectGetMethod {
         Method eat = personClass.getMethod("eat");
         eat.invoke(new Person());
         System.out.println("======================");
-        Method method = personClass.getMethod("eat",String.class);
-        method.invoke(new Person(),"饭");
+        Method method = personClass.getMethod("eat", String.class);
+        method.invoke(new Person(), "饭");
     }
 
 }
